@@ -1,0 +1,28 @@
+<mxfile host="Electron" modified="2026-04-16T00:00:00.000Z" version="26.0.0" type="device">
+  <diagram id="overview" name="Overview">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="931" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Azure Solution Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="527" y="30" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scope" value="Azure subscription / region" style="swimlane;startSize=32;html=1;rounded=0;fillColor=#f7f9fc;strokeColor=#0078d4;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="1120" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="custom-app" value="Custom workload component" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#505050;" vertex="1" parent="scope">
+          <mxGeometry x="140" y="130" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="azure-service" value="Azure App Service" style="image;aspect=fixed;html=1;points=[];align=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;" vertex="1" parent="scope">
+          <mxGeometry x="760" y="130" width="72" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="flow" value="Protocol / interaction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#505050;" edge="1" source="custom-app" target="azure-service" parent="scope">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gaps" value="Assumptions / Design gaps&#xa;- Replace example components with observed architecture&#xa;- Confirm scope, connectivity, identity, resilience, and operations" style="shape=note;whiteSpace=wrap;html=1;size=15;fillColor=#fff4ce;strokeColor=#c19c00;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="100" width="330" height="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
