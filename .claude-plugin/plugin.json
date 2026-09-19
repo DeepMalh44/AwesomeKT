@@ -1,0 +1,23 @@
+{
+  "name": "azure-architecture-diagram-generator",
+  "description": "Creates and reviews editable Azure architecture diagrams in draw.io format, using verified Azure stencils, explicit network and trust boundaries, and a CAF/WAF-informed architecture review.",
+  "version": "1.0.0",
+  "author": {
+    "name": "DeepMalh44",
+    "url": "https://github.com/DeepMalh44"
+  },
+  "homepage": "https://github.com/DeepMalh44/AwesomeKT",
+  "repository": "https://github.com/DeepMalh44/AwesomeKT",
+  "license": "MIT",
+  "keywords": [
+    "azure",
+    "architecture",
+    "drawio",
+    "diagram",
+    "caf",
+    "waf"
+  ],
+  "skills": [
+    "./azure-architecture-diagram-generator/"
+  ]
+}
