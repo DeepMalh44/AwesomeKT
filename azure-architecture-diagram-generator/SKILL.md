@@ -26,9 +26,19 @@ Create editable, uncompressed draw.io diagrams that communicate Azure design int
 9. Save as uncompressed `.drawio` XML. Start from [azure-architecture.drawio](./assets/templates/azure-architecture.drawio) or the minimal mxGraph structure in [drawio-xml.md](./references/drawio-xml.md).
 10. Validate before delivery:
 
-   ```powershell
-   python "$HOME/.copilot/skills/azure-architecture-diagram-generator/scripts/validate-azure-drawio.py" <diagram.drawio> --strict
+   Run `scripts/validate-azure-drawio.py` from this skill's own directory. Resolve
+   it relative to this `SKILL.md` rather than assuming an install path, because the
+   location differs per agent:
+
+   - GitHub Copilot: `$HOME/.copilot/skills/azure-architecture-diagram-generator/`
+   - Claude Code (personal skill): `$HOME/.claude/skills/azure-architecture-diagram-generator/`
+   - Claude Code (plugin): `$CLAUDE_PLUGIN_ROOT/azure-architecture-diagram-generator/`
+
+   ```bash
+   python "<skill-dir>/scripts/validate-azure-drawio.py" <diagram.drawio> --strict
    ```
+
+   The validator uses only the Python standard library, so no package install is required.
 
 11. Open the result in VS Code with `hediet.vscode-drawio` when available. Report the generated pages, assumptions, review findings, and validation result.
 12. Perform a visual readability pass at fit-to-page and 100% zoom. Check every page for text clipping, caption collisions, connector crossings, labels sitting on lines, and insufficient whitespace. Structural validation alone is not a visual review.

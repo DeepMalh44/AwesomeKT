@@ -1,0 +1,24 @@
+{
+  "name": "awesomekt",
+  "owner": {
+    "name": "DeepMalh44",
+    "url": "https://github.com/DeepMalh44"
+  },
+  "metadata": {
+    "description": "Reusable agent skills for Azure work, including a draw.io architecture diagram generator and validator.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "azure-architecture-diagram-generator",
+      "source": "./",
+      "description": "Creates and reviews editable Azure architecture diagrams in draw.io format, using verified Azure stencils, explicit network and trust boundaries, and a CAF/WAF-informed architecture review.",
+      "homepage": "https://github.com/DeepMalh44/AwesomeKT",
+      "repository": "https://github.com/DeepMalh44/AwesomeKT",
+      "author": {
+        "name": "DeepMalh44",
+        "url": "https://github.com/DeepMalh44"
+      }
+    }
+  ]
+}
